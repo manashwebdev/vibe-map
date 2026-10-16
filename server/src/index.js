@@ -12,7 +12,7 @@ import pinRoutes from './routes/pins.js';
 if (!process.env.MONGO_URI) throw new Error('MONGO_URI is missing');
 if ((process.env.JWT_SECRET || '').length < 32) throw new Error('JWT_SECRET must be at least 32 characters');
 
-const origins = (process.env.CLIENT_ORIGIN || 'http://localhost:5173').split(',').map((s) => s.trim());
+const origins = (process.env.CLIENT_ORIGIN || 'https://vibe-map-zb5o.onrender.com').split(',').map((s) => s.trim());
 const app = express();
 const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: origins } });
