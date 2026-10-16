@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Vibe Map</title></head><body>
+
+<div id="neb"></div><canvas id="g"></canvas>
+<header class="app"><h1>VIBE MAP</h1><p id="badge"></p><button class="btn sm" id="home" style="pointer-events:auto;margin-top:6px">← Home</button></header>
+<div id="feed" class="app"></div>
+<aside id="side" class="glass app"><h3>THE WORLD NOW · <span id="cnt">0</span></h3><div id="bars"></div>
+<div id="sel"><div id="sm"></div><q id="sn"></q><button class="btn" id="kw">Send a kind word 💛</button><button class="btn" id="del" style="display:none;margin-top:8px">Remove pin</button></div></aside>
+<section id="dock" class="glass app">
+<div class="moods" id="moods"></div>
+<div class="row"><input id="note" maxlength="80" placeholder="Optional: one line, anonymous"><button class="btn" id="drop" disabled>Drop pin</button></div>
+<div id="hint">Drag to spin the globe. Click anywhere on it to choose your spot.</div>
+</section>
+<div id="land"><nav class="nv"><b>VIBE MAP</b><div class="lk"><a href="#how">How it works</a><a href="#roles">Roles</a><span id="who"></span><button class="btn sm" id="login">Log in</button><button class="btn sm" id="enter2">Open map</button></div></nav>
+<section class="hero"><h2>See how the whole planet is feeling, live.</h2><p>Drop an anonymous mood pin on a glowing Earth, read one-line notes from strangers, and send a kind word to someone who needs it.</p><div class="cta"><button class="btn" id="enter">Enter the map</button><a href="#how">How it works ↓</a></div><div class="chips"><span>● Live</span><span>🌍 <b id="lc">0</b> pins on the map</span><span>🔒 Anonymous</span></div></section>
+<section class="feat" id="how"><div class="glass"><h4>🌍 Live Earth</h4><p>Pins appear and pulse for everyone the moment they are dropped.</p></div><div class="glass"><h4>🕶 Anonymous by design</h4><p>A pin shows a mood, a place and one line. Never a name.</p></div><div class="glass"><h4>💛 Kind words</h4><p>Tap a pin and send warmth. Pins that get more kindness glow bigger.</p></div></section>
+<section class="roles glass" id="roles"><h4>Who can do what</h4><table><tr><th>Role</th><th>Explore</th><th>Drop pins</th><th>Kind words</th><th>Remove pins</th></tr><tr><td>Guest / Viewer</td><td>✅</td><td>—</td><td>—</td><td>—</td></tr><tr><td>Member</td><td>✅</td><td>✅</td><td>✅</td><td>Own only</td></tr><tr><td>Admin</td><td>✅</td><td>✅</td><td>✅</td><td>Any pin</td></tr></table></section><footer class="ft">Built &amp; moderated by <b>Manash</b> · Vibe Map</footer></div>
+<div id="au"><div class="box glass"><h3 id="at">Log in</h3><input id="an" placeholder="Your name" style="display:none" maxlength="40"><input id="ae" type="email" placeholder="Email" autocomplete="email"><input id="ap" type="password" placeholder="Password (8+ characters)" autocomplete="current-password"><div id="aerr"></div><button class="btn" id="as">Log in</button><button class="lnk" id="aw"></button><button class="lnk" id="ax">Cancel</button></div></div>
+<script type="module" src="/src/main.js"></script></body></html>
